@@ -25,6 +25,12 @@ class DataSet:
         with self.connection:
             return self.cursor.execute("SELECT * FROM dataset").fetchall()
     
+    def delete_data_from_dataset(self):
+        with self.connection:
+            self.cursor.execute("DELETE FROM dataset")
+        return True
+
+
     def close(self):
         self.connection.close()
 
