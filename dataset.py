@@ -4,8 +4,8 @@ import random
 
 
 def random_inputs():
-    num_a = random.uniform(-100.0, 100.0000000000001)
-    num_b = random.uniform(-100.0, 100.0000000000001)
+    num_a = random.uniform(-100.0, 100.0)
+    num_b = random.uniform(-100.0, 100.0)
     _sum = num_a + num_b
     return (num_a, num_b, _sum)
 
