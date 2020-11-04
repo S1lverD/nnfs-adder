@@ -30,7 +30,6 @@ class DataSet:
             self.cursor.execute("DELETE FROM dataset")
         return True
 
-
     def close(self):
         self.connection.close()
 
